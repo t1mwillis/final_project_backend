@@ -3,3 +3,4 @@ node_modules/
 .vscode
 nodemon.json
 .DS_STORE
+now.json
