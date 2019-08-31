@@ -1,0 +1,5 @@
+mockups/mockups.bmpr
+node_modules/
+.vscode
+nodemon.json
+.DS_STORE
