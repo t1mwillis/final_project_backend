@@ -8,8 +8,6 @@ const adminKeys = '-__v -password -admin'
 
 router.all('*', isValidToken, isLoggedIn)
 
-//how do we filter out the admins from the users?
-
 router.get('/', removeAdmins, async (req, res, next) => {
     const status = 200
     const response = await User.find(req.query).select(userKeys)

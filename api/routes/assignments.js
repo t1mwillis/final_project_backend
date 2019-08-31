@@ -24,8 +24,6 @@ router.put('/:assignmentId', isSameUser, noScoringData, validateAssignment, asyn
     const user = await User.findOne(query)
     const assignment = user.assignments.id(assignmentId)
 
-    //tricky but I think this will work.
-
     Object.assign(assignment, req.body)
 
     await user.save()

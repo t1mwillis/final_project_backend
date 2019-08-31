@@ -163,6 +163,19 @@ const reset = async () => {
                 }
             ]
         },
+        {
+            firstName: 'Natalie',
+            lastName: 'Marie',
+            password: bcrypt.hashSync('password', 10),
+            email: 'natalie@email.com',
+            assignments:[
+                {
+                    title: `Natalie's Project`,
+                    link: 'https://github.com/natalie/project',
+                    description: `I'm not a cat or a dog but I did my project`
+                }
+            ]
+        }
     ])
 
     return {admin, students}
